@@ -38,11 +38,11 @@ models:
       +schema: bronze
       +materialized: view
     silver:
-      +database: nessie
-      +schema: silver
-      +materialized: view
+      +object_storage_source: nessie
+      +object_storage_path: silver
+      +materialized: table
     gold:
-      +database: nessie
-      +schema: gold
-      +materialized: view
+      +object_storage_source: nessie
+      +object_storage_path: gold
+      +materialized: table
 
